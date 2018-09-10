@@ -7,6 +7,7 @@
 //
 
 #import "QLReachableView.h"
+#import "QLReachableMonitor.h"
 
 const NSInteger kQLReachableViewTag = 20001;
 
@@ -29,13 +30,14 @@ const NSInteger kQLReachableViewTag = 20001;
 }
 
 - (void)commonInit {
-    
+    self.backgroundColor = [UIColor whiteColor];
+    self.tag = kQLReachableViewTag;
 }
 
 #pragma mark - QLReachableViewDelegate
 
 - (void)refresh {
-    
+    [QLReachableMonitor refreshStatus];
 }
 
 @end
