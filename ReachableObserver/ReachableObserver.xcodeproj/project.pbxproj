@@ -55,23 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32442D392146F77600329CAC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */,
-				3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */,
-				32442D212146CBD800329CAC /* QLReachableView.h */,
-				32442D222146CBD800329CAC /* QLReachableView.m */,
-				32442D352146F24E00329CAC /* QLReachableViewDefault.h */,
-				32442D362146F24E00329CAC /* QLReachableViewDefault.m */,
-				32442D312146E53300329CAC /* QLReachableViewHelper.h */,
-				32442D322146E53300329CAC /* QLReachableViewHelper.m */,
-				32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */,
-				32442D262146CDFD00329CAC /* UINavigationController+RootViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		3252BFB62146C6E90011C38F = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +76,16 @@
 		3252BFC22146C6E90011C38F /* ReachableObserver */ = {
 			isa = PBXGroup;
 			children = (
-				32442D392146F77600329CAC /* Classes */,
+				3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */,
+				3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */,
+				32442D212146CBD800329CAC /* QLReachableView.h */,
+				32442D222146CBD800329CAC /* QLReachableView.m */,
+				32442D352146F24E00329CAC /* QLReachableViewDefault.h */,
+				32442D362146F24E00329CAC /* QLReachableViewDefault.m */,
+				32442D312146E53300329CAC /* QLReachableViewHelper.h */,
+				32442D322146E53300329CAC /* QLReachableViewHelper.m */,
+				32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */,
+				32442D262146CDFD00329CAC /* UINavigationController+RootViewController.m */,
 				3252BFC32146C6E90011C38F /* ReachableObserver.h */,
 				3252BFC42146C6E90011C38F /* Info.plist */,
 			);
