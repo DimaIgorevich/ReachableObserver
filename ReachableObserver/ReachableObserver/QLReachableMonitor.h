@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_SWIFT_NAME(ReachableMonitor)
+
 @interface QLReachableMonitor : NSObject
     
 + (void)configure;

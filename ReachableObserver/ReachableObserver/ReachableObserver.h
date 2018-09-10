@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char ReachableObserverVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <ReachableObserver/PublicHeader.h>
 
 #import <ReachableObserver/QLReachableMonitor.h>
+#import <ReachableObserver/QLReachableView.h>
