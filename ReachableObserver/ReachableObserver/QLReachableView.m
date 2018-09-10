@@ -32,6 +32,9 @@ const NSInteger kQLReachableViewTag = 20001;
 - (void)commonInit {
     self.backgroundColor = [UIColor whiteColor];
     self.tag = kQLReachableViewTag;
+    self.duration = 0.3;
+    self.isShow = false;
+    self.isAnimationReverse = true;
 }
 
 #pragma mark - QLReachableViewDelegate

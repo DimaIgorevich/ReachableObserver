@@ -6,9 +6,10 @@
 //  Copyright © 2018 com.QuilCode. All rights reserved.
 //
 
+#import <AFNetworking.h>
 #import "QLReachableMonitor.h"
 #import "UINavigationController+RootViewController.h"
-#import <AFNetworking.h>
+#import "QLReachableViewHelper.h"
 
 static QLReachableView *_reachableView = nil;
 
@@ -32,10 +33,8 @@ static QLReachableView *_reachableView = nil;
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusNotReachable) {
-            //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
             [self showReachableView];
         } else {
-            //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
             [self hideReachableView];
         }
     }];
@@ -43,10 +42,8 @@ static QLReachableView *_reachableView = nil;
 
 + (void)refreshStatus {
     if ([[AFNetworkReachabilityManager sharedManager] networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable) {
-        //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
         [self showReachableView];
     } else {
-        //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
         [self hideReachableView];
     }
 }
@@ -55,13 +52,13 @@ static QLReachableView *_reachableView = nil;
 
 + (void)showReachableView {
     if (![[UINavigationController rootViewController].view viewWithTag:kQLReachableViewTag]) {
-        [[UINavigationController rootViewController].view addSubview:_reachableView];
+        [QLReachableViewHelper animationInView:_reachableView inParent:[UINavigationController rootViewController].view];
     }
 }
 
 + (void)hideReachableView {
     if ([[UINavigationController rootViewController].view viewWithTag:kQLReachableViewTag]) {
-        [_reachableView removeFromSuperview];
+        [QLReachableViewHelper animationOutView:_reachableView inParent:[UINavigationController rootViewController].view];
     }
 }
     
