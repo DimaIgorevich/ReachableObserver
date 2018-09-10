@@ -69,11 +69,11 @@
 + (void)animationNone:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
         [view removeFromSuperview];
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
         [parent addSubview:view];
     }
 }
@@ -81,7 +81,7 @@
 + (void)animationFade:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
         view.alpha = 1.0;
         [UIView animateWithDuration:view.duration animations:^{
             view.alpha = 0.0;
@@ -90,7 +90,7 @@
         }];
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
         view.alpha = 0.0;
         [parent addSubview:view];
         [UIView animateWithDuration:view.duration animations:^{
@@ -104,7 +104,7 @@
 + (void)animationPushFromDown:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
         [UIView animateWithDuration:view.duration animations:^{
             CGRect endFrame = CGRectMake(0, CGRectGetHeight(parent.frame), CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
             view.frame = endFrame;
@@ -113,7 +113,7 @@
         }];
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
         CGRect startFrame = CGRectMake(0, parent.frame.size.height, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame));
         view.frame = startFrame;
         [parent addSubview:view];
@@ -127,30 +127,30 @@
 + (void)animationPushFromTop:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
 + (void)animationPushFromRight:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
 + (void)animationPushFromLeft:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
@@ -159,40 +159,40 @@
 + (void)animationFlipFromTop:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
 + (void)animationFlipFromDown:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
 + (void)animationFlipFromLeft:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 
 + (void)animationFlipFromRight:(QLReachableView *)view inParent:(UIView *)parent {
     if (view.isShow) {
         //hide
-        view.isShow = false;
+        view.isShow = NO;
     } else {
         //show
-        view.isShow = true;
+        view.isShow = YES;
     }
 }
 

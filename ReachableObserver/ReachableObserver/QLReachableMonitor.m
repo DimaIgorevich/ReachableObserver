@@ -8,6 +8,7 @@
 
 #import <AFNetworking.h>
 #import "QLReachableMonitor.h"
+#import "QLReachableViewDefault.h"
 #import "UINavigationController+RootViewController.h"
 #import "QLReachableViewHelper.h"
 
@@ -19,7 +20,7 @@ static QLReachableView *_reachableView = nil;
     const CGRect frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].applicationFrame), CGRectGetHeight([UIScreen mainScreen].applicationFrame));
     if (_reachableView == nil) {
         if (reachableView == nil) {
-            _reachableView = [[QLReachableView alloc] initWithFrame:frame];
+            _reachableView = [[QLReachableViewDefault alloc] initWithFrame:frame];
         } else {
             reachableView.frame = frame;
             _reachableView = reachableView;

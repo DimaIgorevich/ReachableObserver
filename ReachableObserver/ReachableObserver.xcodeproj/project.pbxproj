@@ -14,6 +14,8 @@
 		32442D2A2146D1E700329CAC /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32442D292146D1E700329CAC /* libAFNetworking.a */; };
 		32442D332146E53300329CAC /* QLReachableViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D312146E53300329CAC /* QLReachableViewHelper.h */; };
 		32442D342146E53300329CAC /* QLReachableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D322146E53300329CAC /* QLReachableViewHelper.m */; };
+		32442D372146F24E00329CAC /* QLReachableViewDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D352146F24E00329CAC /* QLReachableViewDefault.h */; };
+		32442D382146F24E00329CAC /* QLReachableViewDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D362146F24E00329CAC /* QLReachableViewDefault.m */; };
 		3252BFC52146C6E90011C38F /* ReachableObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3252BFC32146C6E90011C38F /* ReachableObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3252BFCD2146C9D20011C38F /* QLReachableMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */; };
 		3252BFCE2146C9D20011C38F /* QLReachableMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */; };
@@ -29,6 +31,8 @@
 		32442D292146D1E700329CAC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32442D312146E53300329CAC /* QLReachableViewHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLReachableViewHelper.h; sourceTree = "<group>"; };
 		32442D322146E53300329CAC /* QLReachableViewHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLReachableViewHelper.m; sourceTree = "<group>"; };
+		32442D352146F24E00329CAC /* QLReachableViewDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLReachableViewDefault.h; sourceTree = "<group>"; };
+		32442D362146F24E00329CAC /* QLReachableViewDefault.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLReachableViewDefault.m; sourceTree = "<group>"; };
 		3252BFC02146C6E90011C38F /* ReachableObserver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReachableObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3252BFC32146C6E90011C38F /* ReachableObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReachableObserver.h; sourceTree = "<group>"; };
 		3252BFC42146C6E90011C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */,
 				32442D212146CBD800329CAC /* QLReachableView.h */,
 				32442D222146CBD800329CAC /* QLReachableView.m */,
+				32442D352146F24E00329CAC /* QLReachableViewDefault.h */,
+				32442D362146F24E00329CAC /* QLReachableViewDefault.m */,
 				32442D312146E53300329CAC /* QLReachableViewHelper.h */,
 				32442D322146E53300329CAC /* QLReachableViewHelper.m */,
 				32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */,
@@ -113,6 +119,7 @@
 			files = (
 				32442D332146E53300329CAC /* QLReachableViewHelper.h in Headers */,
 				3252BFCD2146C9D20011C38F /* QLReachableMonitor.h in Headers */,
+				32442D372146F24E00329CAC /* QLReachableViewDefault.h in Headers */,
 				32442D272146CDFD00329CAC /* UINavigationController+RootViewController.h in Headers */,
 				32442D232146CBD800329CAC /* QLReachableView.h in Headers */,
 				3252BFC52146C6E90011C38F /* ReachableObserver.h in Headers */,
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32442D282146CDFD00329CAC /* UINavigationController+RootViewController.m in Sources */,
+				32442D382146F24E00329CAC /* QLReachableViewDefault.m in Sources */,
 				32442D342146E53300329CAC /* QLReachableViewHelper.m in Sources */,
 				3252BFCE2146C9D20011C38F /* QLReachableMonitor.m in Sources */,
 				32442D242146CBD800329CAC /* QLReachableView.m in Sources */,

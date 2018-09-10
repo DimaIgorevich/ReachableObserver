@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReachableObserver"
-  s.version      = "0.0.13"
+  s.version      = "0.0.14"
   s.summary      = "ReachableObserver framework"
   s.description  = "ReachableObserver framework help to monitor connection status"
 

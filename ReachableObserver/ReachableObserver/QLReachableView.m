@@ -33,12 +33,11 @@ const CGFloat kQLReachableViewDelayRefreshingDefault = 0.33;
 }
 
 - (void)commonInit {
-    self.backgroundColor = [UIColor whiteColor];
     self.tag = kQLReachableViewTag;
     self.duration = kQLReachableViewDurationDefault;
     self.delayRefreshing = kQLReachableViewDelayRefreshingDefault;
-    self.isShow = false;
-    self.isAnimationReverse = true;
+    self.isShow = NO;
+    self.isAnimationReverse = YES;
 }
 
 #pragma mark - QLReachableViewDelegate
