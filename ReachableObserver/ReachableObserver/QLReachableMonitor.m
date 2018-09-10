@@ -29,6 +29,7 @@ static QLReachableView *_reachableView = nil;
 }
 
 + (void)observeReachable {
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusNotReachable) {
             //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
