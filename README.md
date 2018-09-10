@@ -8,7 +8,7 @@ ReachableObserver to show ReachableView if lost internet connection and hide it 
 
 ## Example
 
-
+<img src="https://github.com/DimaIgorevich/ReachableObserver/blob/master/Resources/example.gif" width="400">
 
 ## Features
 
