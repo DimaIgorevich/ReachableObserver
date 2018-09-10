@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+FOUNDATION_EXTERN const NSInteger kQLReachableViewTag;
+
 NS_SWIFT_NAME(ReachableViewDelegate)
 
 @protocol QLReachableViewDelegate <NSObject>

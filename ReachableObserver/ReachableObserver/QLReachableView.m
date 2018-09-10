@@ -8,6 +8,8 @@
 
 #import "QLReachableView.h"
 
+const NSInteger kQLReachableViewTag = 20001;
+
 @implementation QLReachableView
 
 #pragma mark - Initialize
