@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReachableObserver"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "ReachableObserver framework"
   s.description  = "ReachableObserver framework help to monitor connection status"
 
@@ -73,6 +73,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "AFNetworking"
+  # s.dependency "AFNetworking"
 
 end
