@@ -8,6 +8,7 @@
 
 #import "QLReachableMonitor.h"
 #import "UINavigationController+RootViewController.h"
+#import <AFNetworking.h>
 
 static QLReachableView *_reachableView = nil;
 
@@ -28,25 +29,25 @@ static QLReachableView *_reachableView = nil;
 }
 
 + (void)observeReachable {
-//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//        if (status == AFNetworkReachabilityStatusNotReachable) {
-//            //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
-//            [self showReachableView];
-//        } else {
-//            //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
-//            [self hideReachableView];
-//        }
-//    }];
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        if (status == AFNetworkReachabilityStatusNotReachable) {
+            //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
+            [self showReachableView];
+        } else {
+            //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
+            [self hideReachableView];
+        }
+    }];
 }
 
 + (void)refreshStatus {
-//    if ([[AFNetworkReachabilityManager sharedManager] networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable) {
-//        //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
-//        [self showReachableView];
-//    } else {
-//        //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
-//        [self hideReachableView];
-//    }
+    if ([[AFNetworkReachabilityManager sharedManager] networkReachabilityStatus] == AFNetworkReachabilityStatusNotReachable) {
+        //NEED SHOW VIEW WITH NOT INTERNET CONNECTION
+        [self showReachableView];
+    } else {
+        //NEED HIDE VIEW WITH NOT INTERNET CONNECTION
+        [self hideReachableView];
+    }
 }
 
 #pragma mark - Helpers

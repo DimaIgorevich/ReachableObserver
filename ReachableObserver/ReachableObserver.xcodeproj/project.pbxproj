@@ -11,21 +11,27 @@
 		32442D242146CBD800329CAC /* QLReachableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D222146CBD800329CAC /* QLReachableView.m */; };
 		32442D272146CDFD00329CAC /* UINavigationController+RootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */; };
 		32442D282146CDFD00329CAC /* UINavigationController+RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D262146CDFD00329CAC /* UINavigationController+RootViewController.m */; };
+		32442D2A2146D1E700329CAC /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32442D292146D1E700329CAC /* libAFNetworking.a */; };
 		3252BFC52146C6E90011C38F /* ReachableObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3252BFC32146C6E90011C38F /* ReachableObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3252BFCD2146C9D20011C38F /* QLReachableMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */; };
 		3252BFCE2146C9D20011C38F /* QLReachableMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */; };
+		525132EE212A555B3A0111B4 /* libPods-ReachableObserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97383CD3D19C7CC281EB098A /* libPods-ReachableObserver.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25E5D8C0402DA0D6FC5839D2 /* Pods-ReachableObserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachableObserver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReachableObserver/Pods-ReachableObserver.debug.xcconfig"; sourceTree = "<group>"; };
 		32442D212146CBD800329CAC /* QLReachableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLReachableView.h; sourceTree = "<group>"; };
 		32442D222146CBD800329CAC /* QLReachableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLReachableView.m; sourceTree = "<group>"; };
 		32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RootViewController.h"; sourceTree = "<group>"; };
 		32442D262146CDFD00329CAC /* UINavigationController+RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RootViewController.m"; sourceTree = "<group>"; };
+		32442D292146D1E700329CAC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3252BFC02146C6E90011C38F /* ReachableObserver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReachableObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3252BFC32146C6E90011C38F /* ReachableObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReachableObserver.h; sourceTree = "<group>"; };
 		3252BFC42146C6E90011C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLReachableMonitor.h; sourceTree = "<group>"; };
 		3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLReachableMonitor.m; sourceTree = "<group>"; };
+		97383CD3D19C7CC281EB098A /* libPods-ReachableObserver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReachableObserver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4727B0EB775EE164D1F166F /* Pods-ReachableObserver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachableObserver.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReachableObserver/Pods-ReachableObserver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32442D2A2146D1E700329CAC /* libAFNetworking.a in Frameworks */,
+				525132EE212A555B3A0111B4 /* libPods-ReachableObserver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				3252BFC22146C6E90011C38F /* ReachableObserver */,
 				3252BFC12146C6E90011C38F /* Products */,
+				C10E168A1E8C212A48D284F6 /* Pods */,
+				FD013F1BD727E6F46207AD0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +80,24 @@
 			path = ReachableObserver;
 			sourceTree = "<group>";
 		};
+		C10E168A1E8C212A48D284F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25E5D8C0402DA0D6FC5839D2 /* Pods-ReachableObserver.debug.xcconfig */,
+				B4727B0EB775EE164D1F166F /* Pods-ReachableObserver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD013F1BD727E6F46207AD0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32442D292146D1E700329CAC /* libAFNetworking.a */,
+				97383CD3D19C7CC281EB098A /* libPods-ReachableObserver.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -91,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3252BFC82146C6E90011C38F /* Build configuration list for PBXNativeTarget "ReachableObserver" */;
 			buildPhases = (
+				A5A5530EF5D3998E9AA1A70A /* [CP] Check Pods Manifest.lock */,
 				3252BFBB2146C6E90011C38F /* Sources */,
 				3252BFBC2146C6E90011C38F /* Frameworks */,
 				3252BFBD2146C6E90011C38F /* Headers */,
@@ -145,6 +174,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5A5530EF5D3998E9AA1A70A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReachableObserver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3252BFBB2146C6E90011C38F /* Sources */ = {
@@ -278,6 +328,7 @@
 		};
 		3252BFC92146C6E90011C38F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E5D8C0402DA0D6FC5839D2 /* Pods-ReachableObserver.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +354,7 @@
 		};
 		3252BFCA2146C6E90011C38F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4727B0EB775EE164D1F166F /* Pods-ReachableObserver.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
