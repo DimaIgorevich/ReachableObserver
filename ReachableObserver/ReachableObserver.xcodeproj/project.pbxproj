@@ -72,19 +72,11 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		32442D3A2146F78B00329CAC /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				32442D392146F77600329CAC /* Classes */,
-				3252BFC32146C6E90011C38F /* ReachableObserver.h */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
 		3252BFB62146C6E90011C38F = {
 			isa = PBXGroup;
 			children = (
 				3252BFC22146C6E90011C38F /* ReachableObserver */,
+				3252BFC12146C6E90011C38F /* Products */,
 				C10E168A1E8C212A48D284F6 /* Pods */,
 				FD013F1BD727E6F46207AD0C /* Frameworks */,
 			);
@@ -96,14 +88,13 @@
 				3252BFC02146C6E90011C38F /* ReachableObserver.framework */,
 			);
 			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		3252BFC22146C6E90011C38F /* ReachableObserver */ = {
 			isa = PBXGroup;
 			children = (
-				3252BFC12146C6E90011C38F /* Products */,
-				32442D3A2146F78B00329CAC /* Public */,
+				32442D392146F77600329CAC /* Classes */,
+				3252BFC32146C6E90011C38F /* ReachableObserver.h */,
 				3252BFC42146C6E90011C38F /* Info.plist */,
 			);
 			path = ReachableObserver;
