@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReachableObserver"
-  s.version      = "0.0.14"
+  s.version      = "0.0.15"
   s.summary      = "ReachableObserver framework"
   s.description  = "ReachableObserver framework help to monitor connection status"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ReachableObserver/**/*.{h,m}"
+  s.source_files  = "ReachableObserver/Public/**/*.h"
 #  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
