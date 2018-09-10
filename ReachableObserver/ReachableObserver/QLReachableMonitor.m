@@ -7,15 +7,24 @@
 //
 
 #import "QLReachableMonitor.h"
-#import "QLReachableView.h"
 #import "UINavigationController+RootViewController.h"
 
 static QLReachableView *_reachableView = nil;
 
 @implementation QLReachableMonitor
 
-+ (void)configure {
-    NSLog(@"configure");
++ (void)configureWihtView:(nullable QLReachableView *)reachableView {
+    const CGRect frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].applicationFrame), CGRectGetHeight([UIScreen mainScreen].applicationFrame));
+    if (_reachableView == nil) {
+        if (reachableView == nil) {
+            _reachableView = [[QLReachableView alloc] initWithFrame:frame];
+        } else {
+            reachableView.frame = frame;
+            _reachableView = reachableView;
+        }
+    }
+    
+    [self observeReachable];
 }
 
 + (void)observeReachable {

@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QLReachableView.h"
 
 NS_SWIFT_NAME(ReachableMonitor)
 
 @interface QLReachableMonitor : NSObject
     
-+ (void)configure;
++ (void)configureWihtView:(nullable QLReachableView *)reachableView;
     
 + (void)refreshStatus;
 
