@@ -34,7 +34,7 @@ NS_SWIFT_NAME(ReachableViewDelegate)
 
 @protocol QLReachableViewDelegate <NSObject>
 
-- (void)refresh;
+- (void)refreshWithCompletion:(void (^ __nullable)(void))completion;
 
 @end
 
@@ -43,6 +43,8 @@ NS_SWIFT_NAME(ReachableView)
 @interface QLReachableView : UIView <QLReachableViewDelegate>
 
 @property (nonatomic) CGFloat duration;
+
+@property (nonatomic) CGFloat delayRefreshing;
 
 @property (nonatomic) BOOL isAnimationReverse;
 

@@ -11,6 +11,9 @@
 
 const NSInteger kQLReachableViewTag = 20001;
 
+const CGFloat kQLReachableViewDurationDefault = 0.3;
+const CGFloat kQLReachableViewDelayRefreshingDefault = 0.33;
+
 @implementation QLReachableView
 
 #pragma mark - Initialize
@@ -32,15 +35,21 @@ const NSInteger kQLReachableViewTag = 20001;
 - (void)commonInit {
     self.backgroundColor = [UIColor whiteColor];
     self.tag = kQLReachableViewTag;
-    self.duration = 0.3;
+    self.duration = kQLReachableViewDurationDefault;
+    self.delayRefreshing = kQLReachableViewDelayRefreshingDefault;
     self.isShow = false;
     self.isAnimationReverse = true;
 }
 
 #pragma mark - QLReachableViewDelegate
 
-- (void)refresh {
+- (void)refreshWithCompletion:(void (^ __nullable)(void))completion {
     [QLReachableMonitor refreshStatus];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.delayRefreshing * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (completion != nil) {
+            completion();
+        }
+    });
 }
 
 @end
