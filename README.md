@@ -6,6 +6,10 @@
 
 ReachableObserver to show ReachableView if lost internet connection and hide it if internet connection recovered.
 
+## Example
+
+
+
 ## Features
 
 - [x] Setting 'duration' for animation
@@ -67,14 +71,14 @@ ReachableMonitor.configureWihtView(nil) //or your custom view that child from QL
 
 CustomReachableView: ReachableView {
 
-//Custom properties
+  //Custom properties
 
-//Lifecycle
+  //Lifecycle
 
-override func commomInit() {
-super.commonInit()
-//Initialize custom properties
-}
+  override func commomInit() {
+    super.commonInit()
+    //Initialize custom properties
+  }
 
 }
 
@@ -94,8 +98,8 @@ super.commonInit()
 //Lifecycle
 
 - (void)commonInit {
-[super commonInit];
-//Initialize custom properties
+   [super commonInit];
+   //Initialize custom properties
 }
 
 @end
