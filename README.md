@@ -38,7 +38,7 @@ ReachableObserver is available through [CocoaPods](http://cocoapods.org).
 
 To install add the following line to your Podfile:
 
-pod 'ReachableObserver'
+    pod 'ReachableObserver'
 
 ## Usage
 
