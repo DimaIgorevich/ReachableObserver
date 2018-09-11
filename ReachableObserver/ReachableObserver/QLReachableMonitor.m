@@ -17,7 +17,7 @@ static QLReachableView *_reachableView = nil;
 @implementation QLReachableMonitor
 
 + (void)configureWihtView:(nullable QLReachableView *)reachableView {
-    const CGRect frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].applicationFrame), CGRectGetHeight([UIScreen mainScreen].applicationFrame));
+    const CGRect frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds));
     if (_reachableView == nil) {
         if (reachableView == nil) {
             _reachableView = [[QLReachableViewDefault alloc] initWithFrame:frame];
