@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReachableObserver"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
   s.summary      = "ReachableObserver framework"
   s.description  = "ReachableObserver framework help to monitor connection status"
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author             = { "Dmitriy" => "dzhimasan@gmail.com" }
+  s.author       = { "Dmitriy" => "dzhimasan@gmail.com" }
 
   s.platform     = :ios, "8.0"
 
