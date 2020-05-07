@@ -1,8 +1,8 @@
 # ReachableObserver
 
-[![Version](https://img.shields.io/cocoapods/v/ScalableContentScrollView.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
-[![License](https://img.shields.io/cocoapods/l/ScalableContentScrollView.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
-[![Platform](https://img.shields.io/cocoapods/p/ScalableContentScrollView.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
+[![Version](https://img.shields.io/cocoapods/v/ReachableObserver.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
+[![License](https://img.shields.io/cocoapods/l/ReachableObserver.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
+[![Platform](https://img.shields.io/cocoapods/p/ReachableObserver.svg?style=flat)](https://cocoapods.org/pods/ReachableObserver)
 
 ReachableObserver to show ReachableView if lost internet connection and hide it if internet connection recovered.
 
