@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ReachableObserver"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "ReachableObserver framework"
   s.description  = "ReachableObserver framework help to monitor connection status"
 
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author       = { "Dmitriy" => "dzhimasan@gmail.com" }
+  s.author       = { "Dmitriy Rumiankov" => "dzhimasan@gmail.com" }
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "12.0"
 
   s.source       = { :git => "https://github.com/DimaIgorevich/ReachableObserver.git", :tag => "#{s.version}" }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 com.QuilCode. All rights reserved.
 //
 
-#import <AFNetworking.h>
+#import "AFNetworkReachabilityManager.h"
 #import "QLReachableMonitor.h"
 #import "QLReachableViewDefault.h"
 #import "UINavigationController+RootViewController.h"

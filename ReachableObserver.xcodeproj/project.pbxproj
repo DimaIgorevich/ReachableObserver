@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3206377C248249E300FB0F87 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3206377A248249E300FB0F87 /* AFNetworkReachabilityManager.h */; };
+		3206377D248249E300FB0F87 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3206377B248249E300FB0F87 /* AFNetworkReachabilityManager.m */; };
 		32442D232146CBD800329CAC /* QLReachableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D212146CBD800329CAC /* QLReachableView.h */; };
 		32442D242146CBD800329CAC /* QLReachableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D222146CBD800329CAC /* QLReachableView.m */; };
 		32442D272146CDFD00329CAC /* UINavigationController+RootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */; };
 		32442D282146CDFD00329CAC /* UINavigationController+RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D262146CDFD00329CAC /* UINavigationController+RootViewController.m */; };
-		32442D2A2146D1E700329CAC /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32442D292146D1E700329CAC /* libAFNetworking.a */; };
 		32442D332146E53300329CAC /* QLReachableViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D312146E53300329CAC /* QLReachableViewHelper.h */; };
 		32442D342146E53300329CAC /* QLReachableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32442D322146E53300329CAC /* QLReachableViewHelper.m */; };
 		32442D372146F24E00329CAC /* QLReachableViewDefault.h in Headers */ = {isa = PBXBuildFile; fileRef = 32442D352146F24E00329CAC /* QLReachableViewDefault.h */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		25E5D8C0402DA0D6FC5839D2 /* Pods-ReachableObserver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachableObserver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReachableObserver/Pods-ReachableObserver.debug.xcconfig"; sourceTree = "<group>"; };
+		3206377A248249E300FB0F87 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3206377B248249E300FB0F87 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		32442D212146CBD800329CAC /* QLReachableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLReachableView.h; sourceTree = "<group>"; };
 		32442D222146CBD800329CAC /* QLReachableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLReachableView.m; sourceTree = "<group>"; };
 		32442D252146CDFD00329CAC /* UINavigationController+RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RootViewController.h"; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32442D2A2146D1E700329CAC /* libAFNetworking.a in Frameworks */,
 				525132EE212A555B3A0111B4 /* libPods-ReachableObserver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32063777248249A500FB0F87 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				32063779248249CA00FB0F87 /* ReachabilityManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		32063779248249CA00FB0F87 /* ReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				3206377A248249E300FB0F87 /* AFNetworkReachabilityManager.h */,
+				3206377B248249E300FB0F87 /* AFNetworkReachabilityManager.m */,
+			);
+			path = ReachabilityManager;
+			sourceTree = "<group>";
+		};
 		3252BFB62146C6E90011C38F = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +95,7 @@
 		3252BFC22146C6E90011C38F /* ReachableObserver */ = {
 			isa = PBXGroup;
 			children = (
+				32063777248249A500FB0F87 /* Managers */,
 				3252BFCB2146C9D20011C38F /* QLReachableMonitor.h */,
 				3252BFCC2146C9D20011C38F /* QLReachableMonitor.m */,
 				32442D212146CBD800329CAC /* QLReachableView.h */,
@@ -117,6 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3206377C248249E300FB0F87 /* AFNetworkReachabilityManager.h in Headers */,
 				32442D332146E53300329CAC /* QLReachableViewHelper.h in Headers */,
 				3252BFCD2146C9D20011C38F /* QLReachableMonitor.h in Headers */,
 				32442D372146F24E00329CAC /* QLReachableViewDefault.h in Headers */,
@@ -219,6 +240,7 @@
 				32442D382146F24E00329CAC /* QLReachableViewDefault.m in Sources */,
 				32442D342146E53300329CAC /* QLReachableViewHelper.m in Sources */,
 				3252BFCE2146C9D20011C38F /* QLReachableMonitor.m in Sources */,
+				3206377D248249E300FB0F87 /* AFNetworkReachabilityManager.m in Sources */,
 				32442D242146CBD800329CAC /* QLReachableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
